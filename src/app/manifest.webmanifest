@@ -1,0 +1,37 @@
+{
+    "name": "Dr. Cosmas Ilechukwu 70th birthday",
+    "short_name": "Dr. Cosmas Ilechukwu 70th birthday",
+    "start_url": "/",
+    "display": "standalone",
+    "description": "Join us for a series of events celebrating the 70th birthday of Dr. Cosmas Ilechukwu.",
+    "lang": "en",
+    "dir": "auto",
+    "theme_color": "#424f9a",
+    "background_color": "#ffffff",
+    "orientation": "any",
+    "icons": [
+        {
+            "src": "https://i.ibb.co/ZShmmVz/512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "https://i.ibb.co/m65Dtpv/192x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any"
+        }
+    ],
+    "prefer_related_applications": false,
+    "shortcuts": [
+        {
+            "name": "Home",
+            "url": "/"
+        },
+        {
+            "name": "Event Details",
+            "url": "/#event-details"
+        }
+    ]
+}

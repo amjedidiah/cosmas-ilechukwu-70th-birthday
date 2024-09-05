@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: *
+
+Sitemap: https://dr-cosmas-at-70.vercel.app/sitemap.xml

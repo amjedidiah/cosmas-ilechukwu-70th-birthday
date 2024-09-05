@@ -1,8 +1,22 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+import { Caudex } from "next/font/google";
+
+const cormorant_garamond = Cormorant_Garamond({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-cormorant-garamond",
+  weight: ["400", "500", "700"],
+});
+
+const caudex = Caudex({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-caudex",
+  weight: ["400", "700"],
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +30,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body
+        className={`${cormorant_garamond.variable} ${caudex.variable} antialiased`}
+      >
+        {children}
+      </body>
     </html>
   );
 }
