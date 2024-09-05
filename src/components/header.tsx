@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { Link as ScrollLink } from "react-scroll";
 import CrossIcon from "@/components/cross-icon";
 
@@ -29,13 +28,6 @@ export default function Header() {
             >
               Event Details
             </ScrollLink>
-            <Link
-              href="#"
-              className="font-medium hover:underline underline-offset-4"
-              prefetch={false}
-            >
-              Felicitations
-            </Link>
           </nav>
         </div>
       </header>
