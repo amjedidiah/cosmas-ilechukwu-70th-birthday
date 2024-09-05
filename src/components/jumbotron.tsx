@@ -9,7 +9,7 @@ export default function Jumbotron() {
           <div className="flex flex-col justify-center space-y-4">
             <div className="space-y-2">
               <h1 className="text-3xl font-caudex font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-                Celebrating 70 Years of Impactful Leadership
+                Celebrating 70 Years of An Impactful Life
               </h1>
               <p className="max-w-[600px] text-muted-foreground md:text-xl">
                 Join us in honoring Dr. Cosmas Ilechukwu, the General Overseer
@@ -23,7 +23,7 @@ export default function Jumbotron() {
           <Image
             src="/images/portrait.webp"
             alt="Dr. Cosmas Ilechukwu"
-            className="mx-auto aspect-square overflow-hidden rounded-xl object-cover sm:w-full lg:order-last max-lg:max-w-[360px]"
+            className="mx-auto aspect-square overflow-hidden rounded-xl object-cover sm:w-full lg:order-last sm:max-lg:max-w-[360px]"
             width="550"
             height="550"
             priority
