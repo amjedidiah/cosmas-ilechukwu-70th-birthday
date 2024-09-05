@@ -87,7 +87,7 @@ export function Landing() {
       </main>
       <footer className="py-6 px-4 md:px-6 border-t">
         <div className="container flex flex-col gap-2 sm:flex-row shrink-0 items-center">
-          <p className="text-xs text-muted-foreground">
+          <p className="text-muted-foreground">
             &copy; 2024{" "}
             <a
               href="https://crm-world.org.ng/"
@@ -99,7 +99,7 @@ export function Landing() {
             </a>
             . All rights reserved.
           </p>
-          <p className="sm:ml-auto text-xs">GO @ 70</p>
+          <p className="sm:ml-auto">GO @ 70</p>
         </div>
       </footer>
     </div>

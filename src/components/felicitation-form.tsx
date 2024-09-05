@@ -16,7 +16,7 @@ export default function FelicitationForm() {
         <button
           autoFocus
           onClick={closeModal}
-          className="absolute top-3 right-5 sm:right-8 text-primary border border-primary rounded-lg px-4 py-1 text-xs uppercase"
+          className="absolute top-3 right-5 sm:right-8 text-primary border border-primary rounded-lg px-4 py-1 text-sm uppercase"
         >
           CLOSE form
         </button>
@@ -26,7 +26,7 @@ export default function FelicitationForm() {
           className="w-full h-full py-12"
           title="Dr Cosmas Ilechukwu 70th Birthday Felicitation Form"
         >
-          Loading…
+          <p className="text-center pt-10">Loading…</p>
         </iframe>
       </div>
     </dialog>

@@ -24,14 +24,14 @@ export default function Header() {
             <ScrollLink
               to="event-details"
               href="#event-details"
-              className="text-sm font-medium hover:underline underline-offset-4 cursor-pointer"
+              className="font-medium hover:underline underline-offset-4 cursor-pointer"
               smooth
             >
               Event Details
             </ScrollLink>
             <Link
               href="#"
-              className="text-sm font-medium hover:underline underline-offset-4"
+              className="font-medium hover:underline underline-offset-4"
               prefetch={false}
             >
               Felicitations
