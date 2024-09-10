@@ -3,6 +3,7 @@ import Header from "@/components/header";
 import Jumbotron from "@/components/jumbotron";
 import { DialogProvider } from "@/components/dialog-provider";
 import dynamic from "next/dynamic";
+import PhotoGallery from "@/components/photo-gallery";
 
 const DynamicFelicitationForm = dynamic(() => import("./felicitation-form"), {
   ssr: false,
@@ -41,7 +42,7 @@ export function Landing() {
                         </h3>
                         <p className="text-muted-foreground">
                           &apos;COSMAS ILECHUKWU LEADERSHIP LECTURE&apos; on
-                          Friday, November 8th, 2024 at 10am at Amaechi Hall,
+                          Friday, November 8th, 2024 by 10am at Amaechi Hall,
                           Rockview Hotel, by Government House Roundabout, Owerri
                         </p>
                       </div>
@@ -52,7 +53,7 @@ export function Landing() {
                           THANKSGIVING SERVICE
                         </h3>
                         <p className="text-muted-foreground">
-                          on Saturday, November 9th, 2024 at 10am at CRM Holy
+                          on Saturday, November 9th, 2024 by 10am at CRM Holy
                           Ghost Tabernacle, behind Chisco Park, off Egbu Road,
                           Owerri, Imo State
                         </p>
@@ -83,11 +84,12 @@ export function Landing() {
             </div>
           </section>
           <DynamicFelicitationForm />
+          <PhotoGallery />
         </DialogProvider>
       </main>
       <footer className="py-6 px-4 md:px-6 border-t">
         <div className="container flex flex-col gap-2 sm:flex-row shrink-0 items-center">
-          <p className="text-muted-foreground">
+          <p className="text-muted-foreground max-sm:text-center">
             &copy; 2024{" "}
             <a
               href="https://crm-world.org.ng/"
@@ -99,7 +101,7 @@ export function Landing() {
             </a>
             . All rights reserved.
           </p>
-          <p className="sm:ml-auto">GO @ 70</p>
+          <p className="sm:ml-auto">Dr. Cosmas @ 70</p>
         </div>
       </footer>
     </div>

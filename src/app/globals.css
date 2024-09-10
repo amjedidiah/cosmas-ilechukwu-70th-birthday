@@ -15,7 +15,7 @@
     --secondary: 240 4.8% 95.9%;
     --secondary-foreground: 240 5.9% 10%;
     --muted: 240 4.8% 95.9%;
-    --muted-foreground: 240 3.8% 45%;
+    --muted-foreground: 240 3.8% 15%;
     --accent: 240 4.8% 95.9%;
     --accent-foreground: 240 5.9% 10%;
     --destructive: 0 72% 51%;
@@ -33,7 +33,7 @@
   }
 
   body {
-    @apply bg-background text-foreground font-cormorant-garamond;
+    @apply bg-background text-foreground font-cormorant-garamond text-lg;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -49,5 +49,9 @@
       black
     );
     opacity: 0.75;
+  }
+
+  p {
+    @apply font-medium;
   }
 }
