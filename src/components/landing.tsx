@@ -4,6 +4,7 @@ import Jumbotron from "@/components/jumbotron";
 import { DialogProvider } from "@/components/dialog-provider";
 import dynamic from "next/dynamic";
 import PhotoGallery from "@/components/photo-gallery";
+import Footer from "@/components/Footer";
 
 const DynamicFelicitationForm = dynamic(() => import("./felicitation-form"), {
   ssr: false,
@@ -87,23 +88,7 @@ export function Landing() {
           <PhotoGallery />
         </DialogProvider>
       </main>
-      <footer className="py-6 px-4 md:px-6 border-t">
-        <div className="container flex flex-col gap-2 sm:flex-row shrink-0 items-center">
-          <p className="text-muted-foreground max-sm:text-center">
-            &copy; 2024{" "}
-            <a
-              href="https://crm-world.org.ng/"
-              target="_blank"
-              rel="noopener"
-              className="underline"
-            >
-              Charismatic Renewal Ministries
-            </a>
-            . All rights reserved.
-          </p>
-          <p className="sm:ml-auto">Dr. Cosmas @ 70</p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
