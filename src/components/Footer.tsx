@@ -1,10 +1,9 @@
 "use client";
 
-import useMobileDetect from "use-mobile-detect-hook";
+import useMobileDetect from "@/hooks/use-mobile-detect";
 
 export default function Footer() {
-  const detectMobile = useMobileDetect();
-  const isMobile = detectMobile.isMobile();
+  const { isMobile } = useMobileDetect();
 
   return (
     <footer className="py-6 px-4 md:px-6 border-t">
